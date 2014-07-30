@@ -1,9 +1,9 @@
 /*
-sbf_linux£ºAll the tests described in evaluation section of the paper. (Performance test on many-core is in folder sbf_linux_tile_muticore)
+sbf_linux: All the tests described in evaluation section of the paper. (Performance test on many-core is in folder sbf_linux_tile_muticore)
            To run the specific test, you should comment out the corresponding test code in main().
            
 !Need to modify the path in main.cpp first:  the const variable "fNamePrefix" should be your own folder path which contains the traffic file 
-Compile£º        make
+Compile:         make
 Run:             ./sbf rand_20b_100M.tr(traffic file name) 20(length of the element in traffic file) 100(multiply by 1,000,000(M as a unit) in the program, so will search 100,000,000 elements)
 Default parameter: 
                  If no other parameter input, only run as ./sbf, the code will run as "./sbf rand_20b_100M.tr 20 100" as described before.
@@ -149,7 +149,7 @@ void BFs_correction_test_3(const char *fName, unsigned int m, unsigned int k,
 	//printf("FalsePositive numbers: %d\n", falsePositive);
 }
 
-//Optimal K Formula Verification Test: m is 100,000£¬n is 8000¡¢10000¡¢12000. query 100M elements
+//Optimal K Formula Verification Test: m is 100,000, n is 8000, 10000, 12000. query 100M elements
 void BFs_correction_test_4(const char *fName, unsigned int m, unsigned int k, 
 						unsigned int insertNum, long long queryNum, unsigned int elementLen)
 {
@@ -210,7 +210,7 @@ void BFs_correction_test_5(const char *fName, unsigned int m, unsigned int k,
 
 	//begin querying, and get the cost cpu time
 	for(int nn=0; nn<expNum; nn++) {	//expNum 
-		for(int i=0; !fin.eof() && i<eachNum; i++) {	//Query numbers = eachNum£¬store in stream first
+		for(int i=0; !fin.eof() && i<eachNum; i++) {	//Query numbers = eachNum, store in stream first
 			fin >> stream[i];
 		}
 #ifdef LINUX_PLATFROM	// linux platform to calculate time, LINUX_PLATFROM is defined in Makefile
@@ -293,7 +293,7 @@ int main(int argc,char* argv[])
 	//	printf("\n");
 	//}
 
-	/*Optimal K Formula Veri?cation Test: m is 100,000£¬n is from 4000 to 14000. query 100M elements, each time get 16 spots*/
+	/*Optimal K Formula Veri?cation Test: m is 100,000, n is from 4000 to 14000. query 100M elements, each time get 16 spots*/
 	/*printf("M: %d\tN: %d\n", 100000, 4000);
 	for(int i=0; i<16; i++)
 		BFs_correction_test_4(fName.c_str(), 100000, K[i], 4000, queryNum, len);

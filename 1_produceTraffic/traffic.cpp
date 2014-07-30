@@ -1,9 +1,10 @@
 /*
 Produce traffic file which contains random elements without duplicates.
-        Compile£º g++ -O2 traffic.cpp -o traffic
+        Compile:  g++ -O2 traffic.cpp -o traffic
         Run:      ./traffic 64 100000
         ==>       Means produce a traffic file with 102,400,000 elements without duplicates, and each element is 20 characters in length.
-        Detailed: First parameter: Bit length of the element use binary system, the actual element stored in the traffic file is in decimalism, which is 20 characters in length
+        Detailed: 
+                  First parameter: Bit length of the element use binary system, the actual element stored in the traffic file is in decimalism, which is 20 characters in length
                                    So input 64, means the biggest element in the traffic file is 2^64-1=18446744073709551615, 20 characters in length.
                   Second parameter: Size of the traffic file, which will multiply by 1024 in the program, so input N will produce N*1024 elements  
                   Default parameter: If no other parameter input, only run as ./traffic, the code will use 64 as the first parameter and 1 as the second parameter.

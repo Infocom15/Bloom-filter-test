@@ -3,7 +3,7 @@ Insert the Telera TLR4-03680 platform into the linux PC and test the performance
 !Need to modify the path in main.cpp first:  
                 the const variable "fNamePrefix" should be your own folder path which contains the traffic file 
                 the const variable "fNamePrefixOut" should be your own folder path which will store the result file 
-Compile：       make
+Compile:        make
 Run:            Use ./do.sh to test. Can modify it depend on your specific needs.
 Default parameter:  Use the script do.sh to run the test, no need to use command line by yourself.
 */
