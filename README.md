@@ -1,6 +1,6 @@
 Bloom-filter-test
 =================
-1. produceTraffic: Produce traffic file which contains random elements without duplicates.
+1, produceTraffic: Produce traffic file which contains random elements without duplicates.
 
 Compile:  g++ -O2 traffic.cpp -o traffic
 
@@ -18,7 +18,7 @@ Second parameter: Size of the traffic file, which will multiply by 1024 in the p
 Default parameter: If no other parameter input, only run as ./traffic, the code will use 64 as the first parameter and 1 as the second parameter.
 This will produce a traffic file with 1,024 elements without duplicates, and each element is 20 characters in length.
         
-2. sbf_linux: All the tests described in evaluation section of the paper. (Performance test on many-core is in folder sbf_linux_tile_muticore)
+2, sbf_linux: All the tests described in evaluation section of the paper. (Performance test on many-core is in folder sbf_linux_tile_muticore)
 
 To run the specific test, you should comment out the corresponding test code in main().
 
@@ -32,7 +32,7 @@ Default parameter:
 
 If no other parameter input, only run as ./sbf, the code will run as "./sbf rand_20b_100M.tr 20 100" as described before.
                         
-3. sbf_linux_tile_muticore：Insert the Telera TLR4-03680 platform into the linux PC and test the performance.
+3, sbf_linux_tile_muticore: Insert the Telera TLR4-03680 platform into the linux PC and test the performance.
 		    
 !Need to modify the path in main.cpp first:  
 
