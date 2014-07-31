@@ -26,7 +26,7 @@ To run the specific test, you should comment out the corresponding test code in 
 
 Note:            Need to change the path in main.cpp first. 
 
-		 The const variable "fNamePrefix" should be your own folder path which includes the traffic file. 
+The const variable "fNamePrefix" should be your own folder path which includes the traffic file. 
 
 Compile:         make
 
@@ -38,9 +38,9 @@ Default parameter: If you run as "./sbf" without any parameters, the code will r
 		    
 Note:           Need to change the path in main.cpp first.
 
-                The const variable "fNamePrefix" should be your own folder path which contains the traffic file.
+The const variable "fNamePrefix" should be your own folder path which contains the traffic file.
 
-                The const variable "fNamePrefixOut" should be your own folder path which will store the result file.
+The const variable "fNamePrefixOut" should be your own folder path which will store the result file.
 
 Compile:        make
 
